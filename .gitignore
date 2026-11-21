@@ -15,3 +15,5 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+# 给claude的指令
+SLIM_PLAN.md
