@@ -1,0 +1,69 @@
+# zhs-exam-mcp 配置示例（仓库自带，作为默认值）。
+# 自定义：复制为 config.yaml 后修改（config.yaml 不会提交到 git）；也可用环境变量 ZHS_CONFIG 指定配置文件。
+# 相对路径一律以项目目录（zhs-exam-mcp/）为基准。
+
+cdp_url: http://127.0.0.1:9222
+page_url_match: onlineexamh5new.zhihuishu.com
+page_url_prefer: /dohomework/        # 作业列表页同域名，只连做题页
+
+runtime_dir: runtime
+
+low_confidence_threshold: 0.7
+
+# 读题模式（侦察结论见 docs/FINDINGS.md）：
+#   api = 题干/选项取自页面加载时的 doHomework 响应（明文；DOM 中题干为空，无法从 DOM 读），
+#         选中状态取自 DOM（26 题的 DOM 同时存在，无需逐题切换）
+#   dom = 仅 DOM（本平台题干不可读，不推荐）
+extract_mode: api
+
+# 填写后的保存动作：next = 点「下一题」（最后一题为「保存」按钮）；none = 不点
+save_action: next
+# 最后一题点完「保存」后是否再点「暂存作业」：save_progress | none
+last_question_save: none
+
+delay_min: 0.8
+delay_max: 2.0
+max_consecutive_failures: 2
+# 切题后等待题目区渲染的超时（毫秒）
+render_timeout_ms: 5000
+
+# 提交：仅当「提交条件」全部满足且用户确认后，submit_exam 才会点击（见 PLAN 第 8 节）
+submit_button_text: 提交作业
+submit_confirm_texts: [确定, 确认, 确认提交]
+
+api:
+  paper_url_pattern: /student/doHomework
+  answer_url_pattern: /answer/getStuAnswerInfoNew
+
+# ---------- 「作业考试」列表页（批量做章节测试用）----------
+# 只处理名称匹配 allowed_name_pattern 的章节测试；期末「在线考试」永远不碰。
+exam_list:
+  url_match: "#/webExamList"
+  homework_url_pattern: /student/getStudentHomework
+  card: ".examItemWrap"
+  card_title: ".examTit .name"
+  start_button: ".examChartBox1 span.themeBg"
+  start_button_texts: [开始答题, 继续答题]
+  allowed_name_pattern: "单元测试|章节测试|章测试"
+  open_timeout_s: 25
+
+# ---------- DOM 选择器（侦察确认于 2026-11-19，见 docs/FINDINGS.md）----------
+# 「*_selected / *_answered」为 CSS 选择器：元素自身匹配或其后代存在匹配即视为真。
+selectors:
+  exam_title: null                    # 标题从 doHomework / 页面文字取
+  question_root: ".examPaper_subject" # 每题一个，全部在 DOM 中，仅当前题可见
+  question_header: ".subject_type_describe"
+  question_stem: ".subject_describe"  # 平台防复制：DOM 中为空，题干取自接口
+  option_item: ".subject_node .nodeLab"
+  option_label: "span.mr10"
+  option_content: ".node_detail"
+  option_click_target: null           # null = 点 nodeLab 本身
+  option_selected: ".onChecked"       # 选中时字母 span 带 onChecked
+  card_item: ".answerCard_list1 li"
+  card_answered: ":not(.white)"       # white=未答，yellow/green=已答
+  card_current: null
+  dialog: ".el-message-box__wrapper, .el-dialog__wrapper, .layui-layer, [id^=tcaptcha], .yidun_popup, .yidun_modal"
+  next_button_text: "下一题"
+  last_save_button_text: "保存"       # 最后一题没有「下一题」，是「保存」
+  prev_button_text: "上一题"
+  save_button_text: "暂存作业"        # 点击后弹「你确定要暂存作业吗」→ 确定

@@ -1,0 +1,179 @@
+{
+ "rt": {
+  "id": null,
+  "score": null,
+  "examBase": {
+   "id": "e9Xr4xmw",
+   "name": "第四章单元测试",
+   "courseName": "计算机组成与系统结构",
+   "toChapter": "第四章",
+   "explain": null,
+   "limitTime": null,
+   "problemNum": 4,
+   "totalScore": "54",
+   "pontType": "百分制",
+   "chapterId": 1001008164,
+   "workExamParts": [
+    {
+     "id": null,
+     "startSort": 1,
+     "questionCount": 4,
+     "questionDtos": [
+      {
+       "id": null,
+       "parentId": null,
+       "name": "具有中断向量表的计算机中，中断向量地址是（ ）",
+       "listenId": null,
+       "listenData": null,
+       "questionType": {
+        "id": 1,
+        "name": "单选题"
+       },
+       "questionOptions": [
+        {
+         "id": 514427385,
+         "content": "中断程序断点<br>"
+        },
+        {
+         "id": 514427389,
+         "content": "中断服务程序入口地址的地址<br>"
+        },
+        {
+         "id": 514427379,
+         "content": "中断服务程序的入口地址<br>"
+        },
+        {
+         "id": 514427392,
+         "content": "子程序入口地址<br>"
+        }
+       ],
+       "questionDatas": null,
+       "questionChildrens": null,
+       "questionScore": "2",
+       "eid": "t2jK9f1rXpFK3bUiBIorNQ==",
+       "comments": null,
+       "result": null,
+       "source": "2",
+       "isFrame": 2
+      },
+      {
+       "id": null,
+       "parentId": null,
+       "name": "单重中断系统中，<br>Ⅰ 保护现场 Ⅱ 中断返回  Ⅲ 开中断  Ⅳ 中断处理<br>Ⅴ 关中断  Ⅵ 保护断点 Ⅶ 恢复现场<br>中断服务程序的执行顺序是（ ）",
+       "listenId": null,
+       "listenData": null,
+       "questionType": {
+        "id": 1,
+        "name": "单选题"
+       },
+       "questionOptions": [
+        {
+         "id": 514427363,
+         "content": "Ⅰ、Ⅴ、Ⅳ、Ⅶ、Ⅲ、Ⅱ<br>"
+        },
+        {
+         "id": 514427367,
+         "content": "Ⅶ、Ⅰ、Ⅳ、Ⅶ、Ⅲ、Ⅱ<br>"
+        },
+        {
+         "id": 514427371,
+         "content": "Ⅰ、Ⅳ、Ⅶ、Ⅲ、Ⅱ<br>"
+        },
+        {
+         "id": 514427358,
+         "content": "Ⅵ、Ⅰ、Ⅳ、Ⅶ、Ⅲ、Ⅱ<br>"
+        }
+       ],
+       "questionDatas": null,
+       "questionChildrens": null,
+       "questionScore": "2",
+       "eid": "bzufo5JyrJHnc7fAsDxG+w==",
+       "comments": null,
+       "result": null,
+       "source": "2",
+       "isFrame": 2
+      },
+      {
+       "id": null,
+       "parentId": null,
+       "name": "DMA写操作是把数据（ ）",
+       "listenId": null,
+       "listenData": null,
+       "questionType": {
+        "id": 1,
+        "name": "单选题"
+       },
+       "questionOptions": [
+        {
+         "id": 514427322,
+         "content": "从CPU传送到I/O设备； <br>"
+        },
+        {
+         "id": 514427327,
+         "content": "从存储器传送到I/O设备； <br>"
+        },
+        {
+         "id": 514427333,
+         "content": "从I/O设备传送到CPU ；<br>"
+        },
+        {
+         "id": 514427317,
+         "content": "从I/O设备传送到存储器； <br>"
+        }
+       ],
+       "questionDatas": null,
+       "questionChildrens": null,
+       "questionScore": "2",
+       "eid": "kC1sTfl/7qLuRL5Bwn+hMA==",
+       "comments": null,
+       "result": null,
+       "source": "2",
+       "isFrame": 2
+      },
+      {
+       "id": null,
+       "parentId": null,
+       "name": "下面叙述正确的是（ ）",
+       "listenId": null,
+       "listenData": null,
+       "questionType": {
+        "id": 2,
+        "name": "多选题"
+       },
+       "questionOptions": [
+        {
+         "id": 514423637,
+         "content": "通常中断产生都是随机的，而子程序调用是由CALL指令（子程序调用指令）引起的。<br>"
+        },
+        {
+         "id": 514423641,
+         "content": "调用中断服务程序和子程序都需保护程序断点，前者由中断隐指令完成，后者由CALL指令本身完成。<br>"
+        },
+        {
+         "id": 514423639,
+         "content": "中断服务程序的入口地址可以通过硬件向量法产生向量地址。子程序调用的子程序入口地址是由CALL指令中的地址码给出的。<br>"
+        },
+        {
+         "id": 514423635,
+         "content": "中断服务程序与中断时CPU正在运行的程序是相互独立的；子程序调用时转入的子程序与CPU正在执行的程序段是同一程序的两部分。<br>"
+        }
+       ],
+       "questionDatas": null,
+       "questionChildrens": null,
+       "questionScore": "2",
+       "eid": "7bCK2v+9eEl/VFKnjfQmCA==",
+       "comments": null,
+       "result": null,
+       "source": "2",
+       "isFrame": 2
+      }
+     ]
+    }
+   ]
+  },
+  "examEndTime": "2026-12-15 23:59:59",
+  "state": 1,
+  "comment": null
+ },
+ "status": "200"
+}

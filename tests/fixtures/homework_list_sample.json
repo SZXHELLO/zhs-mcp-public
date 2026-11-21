@@ -1,0 +1,120 @@
+{
+ "rt": {
+  "studentHomeworkList": [
+   {
+    "id": "stuExam01",
+    "state": 1,
+    "achieveCount": 26,
+    "achieve": 100,
+    "startTime": "2026-08-15 00:00:00",
+    "endDate": "2026-12-15 23:59:59",
+    "courseName": "计算机组成与系统结构",
+    "cpOrderNumber": "第四章",
+    "examName": "第四章单元测试",
+    "examId": "e9Xr4xmw",
+    "problemNum": 26,
+    "chapterRank": 4,
+    "totalScore": "54"
+   },
+   {
+    "id": "stuExam02",
+    "state": 1,
+    "achieveCount": 0,
+    "achieve": 0,
+    "startTime": "2026-08-15 00:00:00",
+    "endDate": "2026-12-15 23:59:59",
+    "courseName": "计算机组成与系统结构",
+    "cpOrderNumber": "第五章",
+    "examName": "第五章单元测试",
+    "examId": "wVn9JLdw",
+    "problemNum": 20,
+    "chapterRank": 5,
+    "totalScore": "44"
+   },
+   {
+    "id": "stuExam03",
+    "state": 1,
+    "achieveCount": 0,
+    "achieve": 0,
+    "startTime": "2026-08-15 00:00:00",
+    "endDate": "2026-12-15 23:59:59",
+    "courseName": "计算机组成与系统结构",
+    "cpOrderNumber": "第六章",
+    "examName": "第六章单元测试",
+    "examId": "yo3d4Zjy",
+    "problemNum": 20,
+    "chapterRank": 6,
+    "totalScore": "40"
+   },
+   {
+    "id": "stuExam04",
+    "state": 1,
+    "achieveCount": 0,
+    "achieve": 0,
+    "startTime": "2026-08-15 00:00:00",
+    "endDate": "2026-12-15 23:59:59",
+    "courseName": "计算机组成与系统结构",
+    "cpOrderNumber": "第七章",
+    "examName": "第七章单元测试",
+    "examId": "w1b19ave",
+    "problemNum": 15,
+    "chapterRank": 7,
+    "totalScore": "34"
+   },
+   {
+    "id": "stuExam05",
+    "state": 1,
+    "achieveCount": 0,
+    "achieve": 0,
+    "startTime": "2026-08-15 00:00:00",
+    "endDate": "2026-12-15 23:59:59",
+    "courseName": "计算机组成与系统结构",
+    "cpOrderNumber": "第八章",
+    "examName": "第八章单元测试",
+    "examId": "ezrYN77e",
+    "problemNum": 15,
+    "chapterRank": 8,
+    "totalScore": "31"
+   },
+   {
+    "id": "stuExam06",
+    "state": 1,
+    "achieveCount": 0,
+    "achieve": 0,
+    "startTime": "2026-08-15 00:00:00",
+    "endDate": "2026-12-15 23:59:59",
+    "courseName": "计算机组成与系统结构",
+    "cpOrderNumber": "第九章",
+    "examName": "第九章单元测试",
+    "examId": "waGLJRY5",
+    "problemNum": 14,
+    "chapterRank": 9,
+    "totalScore": "31"
+   },
+   {
+    "id": "stuExam07",
+    "state": 1,
+    "achieveCount": 0,
+    "achieve": 0,
+    "startTime": "2026-08-15 00:00:00",
+    "endDate": "2026-12-15 23:59:59",
+    "courseName": "计算机组成与系统结构",
+    "cpOrderNumber": "第十章",
+    "examName": "第十章单元测试",
+    "examId": "5voJMZdy",
+    "problemNum": 5,
+    "chapterRank": 10,
+    "totalScore": "10"
+   },
+   {
+    "id": "stuExam08",
+    "state": 1,
+    "achieveCount": 0,
+    "examName": "期中大作业",
+    "cpOrderNumber": null,
+    "chapterRank": null,
+    "problemNum": 3
+   }
+  ]
+ }
+}

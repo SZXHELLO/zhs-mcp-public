@@ -1,0 +1,17 @@
+# 本地配置（从 config.example.yaml 复制）
+config.yaml
+
+# 运行产物：日志、截图、侦察数据、批量状态
+runtime/
+
+# 题库（默认在仓库外 ../Qbank；若 bank_dir 改到仓库内也不提交）
+Qbank/
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
